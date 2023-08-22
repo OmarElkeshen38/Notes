@@ -44,6 +44,7 @@ function App() {
         <Routes>
         <Route path='/' element={<ProtectedRoute><Home /></ProtectedRoute>} />
         <Route path='/home' element={<ProtectedRoute><Home /></ProtectedRoute>} />
+        <Route path='/Note-App' element={<ProtectedRoute><Home /></ProtectedRoute>} />
           <Route path='/register' element={<Register />}/>
           <Route path='/login' element={<Login saveUserData={saveUserData} />}/>
           <Route path='*' element={<Notfound />}/>
