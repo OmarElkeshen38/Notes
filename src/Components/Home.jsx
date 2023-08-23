@@ -80,7 +80,7 @@ function Home() {
     }
 
     function getNoteInfo(noteIndex) {
-
+        
         setNoteIndexUpdated(noteIndex);
 
         document.querySelector("#exampleModal1 input").value = notes[noteIndex].title;
