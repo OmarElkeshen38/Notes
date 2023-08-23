@@ -21,7 +21,7 @@ function App() {
   function logout() {
     localStorage.removeItem('userToken');
     setUserData(null);
-    navigate('./login');
+    navigate('./register');
   }
 
   useEffect(() => {
@@ -32,7 +32,7 @@ function App() {
 
   function ProtectedRoute(props) {
     if (localStorage.getItem('userToken') === null) {
-      return <Navigate to='/login' />
+      return <Navigate to='/register' />
     } else {
       return props.children;
     }
